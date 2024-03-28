@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project RevoU</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <h1>Travels</h1>
+        <div id="nav-icon" class="nav-icon">
+          <h1>&#9776;</h1>
+        </div>
+        <ul id="nav-list" class="hidden">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#our-package">Our Package</a>
+          </li>
+          <li>
+            <a href="#call-us">Call Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main id="home">
+      <div class="main-title">
+        <h1>Your Trusted Travel Agent's</h1>
+        <h3>Your happiness is our happiness</h3>
+      </div>
+
+      <div class="main-section">
+        <section class="left-section">
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide"><img src="assets/bandung.jpg" alt="Slide 1"></div>
+              <div class="slide"><img src="assets/bali.jpg" alt="Slide 2"></div>
+              <div class="slide"><img src="assets/semarang.jpg" alt="Slide 3"></div>
+             
+            </div>
+          </div>
+          <div class="desc-main-top">
+            <p>"Liburan jadi menyenangkan bersama Travels."</p>
+            <div class="bio-desc">
+              <div class="icons">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="bio">
+                <h4>Alex</h4>
+                <p>Content Creator, 21</p>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="desc-main-bottom">
+            <p>
+              Anda sedang merencanakan liburan impian Anda, tetapi merasa
+              kewalahan dengan semua detail yang harus diatur? Jangan khawatir
+              lagi! Dengan layanan kami, Anda akan menemukan segala kemudahan
+              dalam merencanakan petualangan tanpa batas !
+            </p>
+            <div class="list-main">
+              <div class="list">
+                <div class="icons">
+                  <i class="fa-solid fa-1"></i>
+                </div>
+                <p>Pengalaman Wisata Tanpa Ribet!</p>
+              </div>
+              <div class="list">
+                <div class="icons">
+                  <i class="fa-solid fa-2"></i>
+                </div>
+                <p>Hemat Waktu dan Uang!!</p>
+              </div>
+              <div class="list">
+                <div class="icons">
+                  <i class="fa-solid fa-3"></i>
+                </div>
+                <p>Dukungan 24/7 Selama Perjalanan!!!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="right-section">
+          <h1>Contact Us</h1>
+          <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+          <form onsubmit="return validateForm()">
+            <label for="name">Nama:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Masukkan nama Anda"
+            /><br />
+            <label for="email">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Masukkan email Anda"
+            /><br />
+            <label for="destination">Destinasi Travel:</label><br />
+            <select id="destination" name="destination">
+              <option value="" disabled selected hidden>Pilih Destinasi</option>
+              <option value="Bali">Bali</option>
+              <option value="Bandung">Bandung</option>
+              <option value="Semarang">Semarang</option>
+              <option value="Malang">Malang</option>
+              <option value="Makassar">Makassar</option>
+              <option value="Medan">Medan</option></select
+            ><br /><br />
+            <input type="submit" value="Kirim" />
+          </form>
+        </section>
+      </div>
+
+      <!-- Our Package (Main) Section -->
+      <div id="our-package" class="package-title">
+        <h1>Our Package</h1>
+      </div>
+
+      <div class="main-package">
+        <div class="top-package">
+          <div class="package">
+            <div class="icons">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="desc-package">
+              <h4>Bali</h4>
+              <p>
+                Travel dan wisata di Bali. kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icons">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="desc-package">
+              <h4>Bandung</h4>
+              <p>
+                Travel dan wisata di Bandung. kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icons">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="desc-package">
+              <h4>Semarang</h4>
+              <p>
+                Travel dan wisata di Semarang. kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-package">
+          <div class="package">
+            <div class="icons">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="desc-package">
+              <h4>Malang</h4>
+              <p>
+                Travel dan wisata di Malang. kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icons">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="desc-package">
+              <h4>Makassar</h4>
+              <p>
+                Travel dan wisata di Makassar. kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
+            </div>
+          </div>
+          <div class="package">
+            <div class="icons">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="desc-package">
+              <h4>Medan</h4>
+              <p>
+                Travel dan wisata di Medan. kunjungi cagar budaya dan kuliner
+                yang menarik
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Closing Argument (Main) Section -->
+
+      <div id="call-us" class="closing-section">
+        <h1>Ayo Bertravel dengan Travels</h1>
+        <p>
+          Dengan layanan kami, Anda akan menemukan segala yang Anda butuhkan
+          untuk merencanakan perjalanan impian Anda dengan mudah dan nyaman.
+          Jangan biarkan kerumitan merusak kenikmatan liburan Anda. Hubungi kami
+          sekarang juga dan biarkan kami membantu Anda menjadikan setiap momen
+          berharga!
+        </p>
+        <button>Hubungi Kami</button>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer>
+      <h1>Travels</h1>
+      <span>
+        <a>Terms of service</a>
+        <a>Privacy policy</a>
+      </span>
+      <p>©2024 Rizki</p>
+    </footer>
+
+    <!-- JS Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
